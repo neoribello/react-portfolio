@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.header {
+  background: $dark-color;
+  width: 100%;
+  padding: 15px;
+}
+
+.header-links__container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+
+  & .header-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    max-width: 125px;
+    justify-content: space-between;
+  }
+}

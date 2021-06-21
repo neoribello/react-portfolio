@@ -2,19 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Header/Header.scss'
 
-function Header(props) {
+function Header({ active }) {
   return (
     <div className="header">
       <ul className="header-links__container">
         <div className="header-home">
-          Home
+          <Link to='/'>
+            <li className={active === 'home' && 'header-home__active'}>Home</li>
+          </Link>
         </div>
         <div className="header-links">
           <Link to='/portfolio'>
-            <li className="header-links__items">Portfolio</li>
+            <li className={active === 'portfolio' && 'header-portfolio__active'}>Portfolio</li>
           </Link>
           <Link to='/about'>
-            <li className="header-links__items">About</li>
+            <li className={active === 'about' && 'header-about__active'}>About</li>
           </Link>
         </div>
       </ul>

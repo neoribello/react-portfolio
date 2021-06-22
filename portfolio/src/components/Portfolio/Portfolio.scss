@@ -1,0 +1,20 @@
+@import "../../App.scss";
+
+.project-container {
+  display: flex;
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  width: 500px;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+}

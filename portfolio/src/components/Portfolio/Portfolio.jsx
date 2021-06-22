@@ -25,7 +25,7 @@ export default function Portfolio(props) {
       <h1>Portfolio page</h1>
       {
         projects.map(project => (
-          <div className="porfolio-project">
+          <div className="project-container">
             <Project 
               projectName={project.projectName}
               projectImg={project.projectImg}

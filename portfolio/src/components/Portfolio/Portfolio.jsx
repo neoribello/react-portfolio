@@ -12,7 +12,7 @@ export default function Portfolio(props) {
         setProjects(
         snapshot.docs.map(doc => (
           { 
-            projectId: doc.data().projectId,
+            projectId: doc.id,
             projectName: doc.data().projectName,
             projectUrl: doc.data().projectUrl,
             projectImg: doc.data().projectImg

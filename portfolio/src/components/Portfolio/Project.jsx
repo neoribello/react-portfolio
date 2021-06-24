@@ -10,8 +10,8 @@ function Project({ projectName, projectImg, projectUrl, projectId }) {
   
 
   const handleClick = (id) => {
+    history.push(`/projects/${projectId}`)
     console.log("project item", id)
-    // history.push(`/projects/${projectId}`)
   };
 
   return (

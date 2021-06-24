@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" active="home" exact component={Home} />
+          <Route path="/" active="home" exact component={Portfolio} />
           <Route path="/portfolio" active="portfolio"  component={Portfolio} />
           <Route path="/about" active="about" component={About} />
         </Switch>

@@ -5,34 +5,24 @@ import { useParams } from "react-router-dom";
 function ProjectDetails(props) {
   const [project, setProject] = useState([]);
 
-  const fetchProjects = async() => {
-    const response = db.collection('projects');
-    const data = await response.get();
-
-    data.docs.forEach(item => {
-      console.log("data", item.data)
-      setProject([...project, item.data()])
-    })
-  }
-
   useEffect(() => {
-    fetchProjects();
+    return db.collection('projects').onSnapshot((snapshot) => {
+      const projectData = [];
+      snapshot.forEach((doc) => projectData.push({ ...doc.data(), id: doc.id }));
+      console.log("project DATA", projectData);
+      setProject(projectData)
+    })
   }, [])
-
-  console.log("project", project)
 
   return (
     <div>
-    {
-      project && project.map(p =>{
-        return(
-          <div className="blog-container">
-            <h4>{p.projectName}</h4>
-          </div>
-        )
-      })
-    }
-  </div>
+      { project.map(p => (
+        <h4>
+          {p.projectName}
+        </h4>
+      ))
+      }
+    </div>
   );
 }
 

@@ -14,8 +14,8 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" active="home" exact component={Portfolio} />
-          <Route path="/" component={ProjectDetails} />
-          <Route path="/portfolio/:projectId" active="portfolio" component={Portfolio} />
+          <Route path="/portfolio" active="home" exact component={Portfolio} />
+          <Route path="/portfolio/:projectId" active="portfolio" component={ProjectDetails} />
           <Route path="/about" active="about" component={About} />
         </Switch>
       </div>

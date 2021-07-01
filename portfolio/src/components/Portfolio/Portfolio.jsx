@@ -23,17 +23,16 @@ export default function Portfolio(props) {
 
   return (
     <div>
-      <h1>Portfolio page</h1>
       <div className="project-container">
         {
           projects.map(project => (
-              <Project
-                className="no-underline"
-                projectId={project.projectId}
-                projectName={project.projectName}
-                projectImg={project.projectImg}
-                projectUrl={project.projectUrl}
-              />
+            <Project
+              className="no-underline"
+              projectId={project.projectId}
+              projectName={project.projectName}
+              projectImg={project.projectImg}
+              projectUrl={project.projectUrl}
+            />
           ))
         }
       </div>

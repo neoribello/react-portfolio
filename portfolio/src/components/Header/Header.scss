@@ -1,0 +1,25 @@
+
+.seperator {
+	display: table;
+	width: 100%;
+	padding: 0;
+  height: 500px;
+  position: relative;
+
+  &::before {   
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    transform: skewY(357deg);
+    background-size: contain;
+    background: url('../../Assets/img/hero-img.jpg');
+    transform-origin: bottom left;
+    z-index: -1;
+  }
+}
+
+
+

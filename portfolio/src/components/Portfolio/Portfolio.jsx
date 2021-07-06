@@ -22,20 +22,18 @@ export default function Portfolio(props) {
   }, []);
 
   return (
-    <div>
-      <div className="project-container">
-        {
-          projects.map(project => (
-            <Project
-              className="no-underline"
-              projectId={project.projectId}
-              projectName={project.projectName}
-              projectImg={project.projectImg}
-              projectUrl={project.projectUrl}
-            />
-          ))
-        }
-      </div>
-    </div>
+    <section className="project-container">
+      {
+        projects.map(project => (
+          <Project
+            className="no-underline"
+            projectId={project.projectId}
+            projectName={project.projectName}
+            projectImg={project.projectImg}
+            projectUrl={project.projectUrl}
+          />
+        ))
+      }
+    </section>
   );
 }

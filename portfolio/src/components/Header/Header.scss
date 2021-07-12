@@ -21,6 +21,21 @@
     background: url('../../Assets/img/hero-img.jpg');
     transform-origin: bottom left;
     z-index: -1;
+    background-position: center;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    transform: skewY(357deg);
+    background-size: contain;
+    background: rgba(9, 59, 78, 0.911);
+    transform-origin: bottom left;
+    z-index: -1;
   }
 }
 

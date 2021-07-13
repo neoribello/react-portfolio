@@ -1,9 +1,23 @@
 @import "../../App.scss";
 
 .navigation {
-  background: $dark-color;
+  background: transparent;
   width: 100%;
-  padding: 15px;
+  padding: 25px 15px;
+  color: black;
+  position: absolute;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+
+  &.scroll {
+    background: rgba(255, 255, 255, 0.705);
+    position: fixed;
+    padding: 15px;
+  }
+
+  & .nav-link {
+    color: white;
+  }
 }
 
 .navigation-links__container {
@@ -20,11 +34,5 @@
     width: 100%;
     max-width: 125px;
     justify-content: space-between;
-  }
-
-  & a > li {
-    color: $white;
-    list-style-type: none;
-    text-decoration: none;
   }
 }

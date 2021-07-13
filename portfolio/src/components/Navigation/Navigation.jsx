@@ -8,7 +8,7 @@ function Navigation({ active }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-      setScroll(window.pageYOffset > 10)
+      setScroll(window.pageYOffset > 50)
       );
     }
   }, []);
@@ -16,12 +16,12 @@ function Navigation({ active }) {
   return (
     <div className={`navigation ${scroll ? "scroll" : ""}`}>
       <ul className="navigation-links__container">
-        <div className="navigation-home">
+        <div className="navigation-home nav-link">
           <Link to='/'>
             <li className={active === 'home' && 'navigation-home__active'}>Home</li>
           </Link>
         </div>
-        <div className="navigation-links">
+        <div className="navigation-links nav-link">
           <Link to='/portfolio'>
             <li className={active === 'portfolio' && 'navigation-portfolio__active'}>Portfolio</li>
           </Link>

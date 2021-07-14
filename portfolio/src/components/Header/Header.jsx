@@ -8,7 +8,12 @@ function Header(props) {
     <section className="header-container">
       <div className="seperator">
         <div className="profile">
-          <img src={Mockup} className="mockup-img" alt="mockup" />
+          <div className="profile-description">
+            <h2>Hi I'm Neil, lets get to work</h2>
+          </div>
+          <div className="profile-mockup">
+            <img src={Mockup} className="mockup-img" alt="mockup" />
+          </div>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ function Header(props) {
       <div className="seperator">
         <div className="profile">
           <div className="profile-description">
-            <h2>Hi I'm Neil, lets get to work</h2>
+            <h1>Hi I'm Neil, lets get to work</h1>
           </div>
           <div className="profile-mockup">
             <img src={Mockup} className="mockup-img" alt="mockup" />

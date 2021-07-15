@@ -13,6 +13,10 @@
     background: rgba(255, 255, 255, 0.705);
     position: fixed;
     padding: 15px;
+
+    & .nav-link {
+      color: black;
+    }
   }
 
   & .nav-link {

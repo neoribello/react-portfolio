@@ -16,17 +16,17 @@ function Navigation({ active }) {
   return (
     <div className={`navigation ${scroll ? "scroll" : ""}`}>
       <ul className="navigation-links__container">
-        <div className="navigation-home nav-link">
+        <div className="navigation-home">
           <Link to='/'>
-            <li className={active === 'home' && 'navigation-home__active'}>Home</li>
+            <li className="nav-link">Home</li>
           </Link>
         </div>
-        <div className="navigation-links nav-link">
+        <div className="navigation-links">
           <Link to='/portfolio'>
-            <li className={active === 'portfolio' && 'navigation-portfolio__active'}>Portfolio</li>
+            <li className="nav-link">Portfolio</li>
           </Link>
           <Link to='/about'>
-            <li className={active === 'about' && 'navigation-about__active'}>About</li>
+            <li className="nav-link">About</li>
           </Link>
         </div>
       </ul>

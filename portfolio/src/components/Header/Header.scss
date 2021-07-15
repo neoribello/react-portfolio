@@ -1,12 +1,13 @@
 .header-container{
   position: relative;
+  margin-bottom: 150px;
 }
 
 .seperator {
 	display: flex;
 	width: 100%;
 	padding: 0;
-  height: 410px;
+  height: 400px;
   position: relative;
 
   &::before {   
@@ -50,12 +51,18 @@
   & .profile-description {
     width: calc(50% - 24px);
     margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   & .profile-mockup {
     width: calc(50% - 24px);
     margin: 12px;
     position: relative;
+    overflow-y: hidden;
+    display: flex;
+    align-items: baseline;
   }
 }
 

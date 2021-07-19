@@ -52,12 +52,11 @@
     width: calc(50% - 24px);
     margin: 12px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-
-    & h1 {
-      color: white;
-    }
+    color: white;
+    flex-direction: column;
+    padding-left: 50px;
   }
 
   & .profile-mockup {
@@ -75,6 +74,7 @@
   z-index: 2;
   right: 0;
   width: 100%;
+  padding-top: 20px;
 }
 
 

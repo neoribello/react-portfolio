@@ -10,6 +10,7 @@ function Header(props) {
         <div className="profile">
           <div className="profile-description">
             <h1>Hi I'm Neil, lets get to work</h1>
+            <span>Web Developer</span>
           </div>
           <div className="profile-mockup">
             <img src={Mockup} className="mockup-img" alt="mockup" />

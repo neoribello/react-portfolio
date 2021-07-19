@@ -6,13 +6,14 @@
   max-width: $container-width;
   margin: 0 auto;
   flex-direction: row;
+  flex-flow: wrap;
 }
 
 .project-card {
   display: flex;
-  width: 100%;
+  width: calc(100% / 3 - 24px);
+  margin: 12px;
   flex-direction: column;
-  width: 500px;
 }
 
 .project-img {

@@ -8,6 +8,7 @@ export default function Skills(props) {
   useEffect(() => {
     db
       .collection('skills')
+      .orderBy('skillTitle', 'desc')
       .onSnapshot(snapshot => {
         setSkills(
         snapshot.docs.map(doc => (

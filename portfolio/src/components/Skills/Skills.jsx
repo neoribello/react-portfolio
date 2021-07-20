@@ -8,7 +8,7 @@ export default function Skills(props) {
   useEffect(() => {
     db
       .collection('skills')
-      .orderBy('skillTitle', 'desc')
+      .orderBy('skillID', 'asc')
       .onSnapshot(snapshot => {
         setSkills(
         snapshot.docs.map(doc => (
@@ -23,7 +23,7 @@ export default function Skills(props) {
 
 
   return (
-    <section className="skills-container">
+    <section className="skill-container">
       {
         skills.map(skill => (
           <Card

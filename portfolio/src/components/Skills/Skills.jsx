@@ -15,6 +15,7 @@ export default function Skills(props) {
           { 
             skillId: doc.id,
             skillTitle: doc.data().skillTitle,
+            skillIcon: doc.data().skillIcon,
             skillDescription: doc.data().skillDescription,
           }))
         )
@@ -29,6 +30,7 @@ export default function Skills(props) {
           <Card
             className="no-underline"
             skillId={skill.skillId}
+            skillIcon={skill.skillIcon}
             skillTitle={skill.skillTitle}
             skillDescription={skill.skillDescription}
           />

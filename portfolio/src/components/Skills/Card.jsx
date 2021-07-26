@@ -4,11 +4,13 @@ import React from 'react';
 function Project({ skillTitle, skillDescription, skillIcon, skillId }) {
   return (
     <div className="skill-card">
-      <div className="skill__name">
+      <div className="skill-icon">
         <img src={skillIcon} alt="icon"/>
-        {skillTitle}
       </div>
-      <div className="skill__description">
+      <h4 className="skill-name">
+        {skillTitle}
+      </h4>
+      <div className="skill-description">
         {skillDescription}
       </div>
     </div>

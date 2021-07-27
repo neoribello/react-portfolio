@@ -1,11 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Project({ skillTitle, skillDescription, skillIcon, skillId }) {
   return (
     <div className="skill-card">
       <div className="skill-icon">
-        <img src={skillIcon} alt="icon"/>
+        <FontAwesomeIcon icon={skillIcon} />
       </div>
       <h4 className="skill-name">
         {skillTitle}

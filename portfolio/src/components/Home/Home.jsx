@@ -8,8 +8,10 @@ export default function Home(props) {
   return (
     <div className="homepage">
       <Header />
-      <Skills />
-      <Portfolio />
+      <div className="background">
+        <Skills />
+        <Portfolio />
+      </div>
     </div>
   );
 }

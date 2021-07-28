@@ -25,17 +25,19 @@ export default function Skills(props) {
 
   return (
     <section className="skill-container">
-      {
-        skills.map(skill => (
-          <Card
-            className="no-underline"
-            skillId={skill.skillId}
-            skillIcon={skill.skillIcon}
-            skillTitle={skill.skillTitle}
-            skillDescription={skill.skillDescription}
-          />
-        ))
-      }
+      <div className="skill-content">
+        {
+          skills.map(skill => (
+            <Card
+              className="no-underline"
+              skillId={skill.skillId}
+              skillIcon={skill.skillIcon}
+              skillTitle={skill.skillTitle}
+              skillDescription={skill.skillDescription}
+            />
+          ))
+        }
+      </div>
     </section>
   );
 }

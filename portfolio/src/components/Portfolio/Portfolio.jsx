@@ -23,17 +23,21 @@ export default function Portfolio(props) {
 
   return (
     <section className="project-container">
-      {
-        projects.map(project => (
-          <Project
-            className="no-underline"
-            projectId={project.projectId}
-            projectName={project.projectName}
-            projectImg={project.projectImg}
-            projectUrl={project.projectUrl}
-          />
-        ))
-      }
+      <h2>My Projects</h2>
+      <div className="project-content">
+        {
+          projects.map(project => (
+            <Project
+              className="no-underline"
+              projectId={project.projectId}
+              projectName={project.projectName}
+              projectImg={project.projectImg}
+              projectUrl={project.projectUrl}
+            />
+          ))
+        }
+      </div>
     </section>
+    
   );
 }

@@ -23,7 +23,7 @@ export default function Portfolio(props) {
 
   return (
     <section className="project-container">
-      <h2>My Projects</h2>
+      <h2 className="project-title">My Projects</h2>
       <div className="project-content">
         {
           projects.map(project => (

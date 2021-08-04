@@ -1,10 +1,22 @@
 @import "../../App.scss";
 
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.project-title {
+  color: white;
+}
+
 .project-content {
   display: flex;
   width: 100%;
   max-width: $container-width;
-  margin: 120px auto;
+  margin: 50px auto;
   flex-direction: row;
   flex-flow: wrap;
 }

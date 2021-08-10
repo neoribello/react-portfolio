@@ -3,6 +3,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import Header from '../Header/Header';
 import Skills from '../Skills/Skills';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import '../Home/Home.scss'
 
 export default function Home(props) {
@@ -14,6 +15,7 @@ export default function Home(props) {
         <Skills />
         <Portfolio />
       </div>
+      <Contact />
     </div>
   );
 }
